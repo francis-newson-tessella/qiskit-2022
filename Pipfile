@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+qiskit = {extras = ["nature", "optimization"], version = "*"}
+jupyterlab = "*"
+jupyterlab-code-formatter = "*"
+black = "*"
+isort = "*"
+qiskit-textbook = {subdirectory = "qiskit-textbook-src", git = "https://github.com/qiskit-community/qiskit-textbook.git"}
+numexpr = "*"
+jupytext = "*"
+nbdime = "*"
+qiskit-nature = {extras = ["pyscf"], version = "*"}
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
